@@ -14,6 +14,12 @@ Started with 1,930 urls from [Search Engines Marketer's List of University and C
 - Added 83 from [my RWD list](https://erikrunyon.com/highered-rwd-directory/) that were missing from SEM's list
 - Subsequent additions and removals
 
+Results are then sorted by domain name, each on a separate line. The protocols are mixed `http` and `https`; additionally some might have include `www.` while others do not. To sort the domains correctly you can invoke Vim's visual mode sort and condition it on the following regex expression.
+
+```
+:'<,'>sort /ps\?:\/\/\(www\.\)\?/
+```
+
 ## Requirements
 
 First and foremost, it's possible that not every url in this list meets these criteria. It was a lot of sites to comb through, and I'm sure I missed some.
